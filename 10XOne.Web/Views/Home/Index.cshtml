@@ -1,0 +1,43 @@
+﻿@model List<_10XOne.Core.Models.Partner>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="table-responsive">
+    <table class="table-striped table-bordered">
+        <thead>
+            <tr>
+                <td>
+                    Partner ID
+                </td>
+                <td>
+                    Parent ID
+                </td>
+                <td>
+                    Partner name
+                </td>
+                <td>
+                    Fee amount
+                </td>
+                <td>
+                    Team shopping amount
+                </td>
+                <td>
+                    Total shopping amount
+                </td>
+            </tr>
+        </thead>
+
+        @foreach (var partner in Model)
+        {
+            <tr>
+                <td>@partner.ID</td>
+                <td>@partner.PARENT_PARTNER_ID</td>
+                <td>@partner.PARTNER_NAME</td>
+                <td>@partner.FEE_PERCENT</td>
+                <td>@partner.TeamShopingAmount</td>
+                <td>@partner.TotalShopingAmount</td>
+            </tr>
+        }
+    </table>
+</div>

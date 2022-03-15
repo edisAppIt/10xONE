@@ -1,0 +1,40 @@
+﻿
+@model List<_10XOne.Core.Models.FinancialItem>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<a asp-action="Edit">Create</a>
+<div class="table-responsive">
+    <table class="table-striped table-bordered">
+        <thead>
+            <tr>
+                <td>
+                    Partner ID
+                </td>
+                <td>
+                    Date
+                </td>
+                <td>
+                    Amount
+                </td>
+                <td>
+                    Action
+                </td>
+            </tr>
+        </thead>
+
+        @foreach (var financialItem in Model)
+        {
+            <tr>
+                <td>@financialItem.PARTNER_ID</td>
+                <td>@financialItem.DATE</td>
+                <td>@financialItem.AMOUNT</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", null, new { id = financialItem.ID })
+                    @Html.ActionLink("Delete", "Delete", null, new { id = financialItem.ID })
+                </td>
+            </tr>
+        }
+    </table>
+</div>

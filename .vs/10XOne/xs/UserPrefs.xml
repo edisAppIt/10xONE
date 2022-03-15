@@ -1,0 +1,58 @@
+﻿<Properties StartupConfiguration="{F1D18C30-F225-4C74-9E12-97783D6C56E8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="10XOne.Web/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="10XOne.Web/Controllers/FinancialItemsController.cs" Line="34" Column="21" />
+      <File FileName="10XOne.Infrastructure/Services/Implementations/FinancialItemService.cs" Line="81" Column="52" />
+      <File FileName="10XOne.Web/Views/FinancialItems/Create.cshtml" Line="26" Column="17" />
+      <File FileName="10XOne.Core/Models/Partner.cs" Line="8" Column="41" />
+      <File FileName="10XOne.Infrastructure/Services/Interfaces/IFinancialItemService.cs" Line="12" Column="22" />
+      <File FileName="10XOne.Web/Views/FinancialItems/Index.cshtml" Line="8" Column="45" />
+      <File FileName="10XOne.Core/ViewModels/FinancialItemViewModel.cs" Line="14" Column="40" />
+      <File FileName="10XOne.Core/Models/FinancialItem.cs" Line="9" Column="48" />
+      <File FileName="10XOne.Web/wwwroot/css/site.css" Line="73" Column="1" />
+      <File FileName="10XOne.Web/Views/Home/Index.cshtml" Line="6" Column="60" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="10XOne" expanded="True">
+            <Node name="10XOne.Core" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+            <Node name="10XOne.Infrastructure" expanded="True">
+              <Node name="Persistence" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="Implementations" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Implementations" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="10XOne.Web" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="FinancialItems" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.10XOne.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

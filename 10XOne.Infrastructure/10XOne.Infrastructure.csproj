@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_10XOne.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Services\Implementations\" />
+    <None Remove="Repository\" />
+    <None Remove="Repository\Interaces\" />
+    <None Remove="Repository\Implementations\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
+    <None Remove="Persistence\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\Implementations\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Repository\Interaces\" />
+    <Folder Include="Repository\Implementations\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\10XOne.Core\10XOne.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.0.1" />
+  </ItemGroup>
+</Project>

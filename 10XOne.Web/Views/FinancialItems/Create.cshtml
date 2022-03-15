@@ -1,0 +1,35 @@
+﻿@model _10XOne.Core.ViewModels.FinancialItemViewModel
+
+@using (Html.BeginForm("Save", "FinancialItems", FormMethod.Post))
+{
+    @Html.HiddenFor(m=>m.FinancialItem.ID);
+
+    <table>
+        <tr>
+            <td>
+                Partner ID
+            </td>
+            <td>
+                @Html.DropDownListFor(m => m.FinancialItem.PARTNER_ID, new SelectList(Model.Partners, "ID", "PARTNER_NAME"))
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Date
+            </td>
+            <td>
+                @Html.EditorFor(m => m.FinancialItem.DATE)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Amount
+            </td>
+            <td>
+                @Html.EditorFor(m => m.FinancialItem.AMOUNT)
+            </td>
+        </tr>
+    </table>
+
+    <input id="Submit" type="submit" value="Save" />
+}
